@@ -1,0 +1,58 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+:root{
+    --blue-native: #04044e;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* Esto sirve para que nuestra página no pueda hacer scroll */
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a{
+    /* para quitar las rayas de abajo */
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .header__icons--container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: var(--blue-native);
+}
+
+
+header .header__icons--container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    justify-self: end;
+}
+
